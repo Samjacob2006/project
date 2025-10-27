@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  header.hero {
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header span {
+    color: #00ffff;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff4081;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    animation: slideUp 1.5s ease-out;
+  }
+  
+  .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skill-icons span {
+    background: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #222;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00ffff88;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #00ffff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-in forwards;
+  }
+  
+  .fade-in.delay {
+    animation-delay: 0.5s;
+  }
+  
+  .slide-in {
+    animation: slideUp 1s ease-in;
+  }
